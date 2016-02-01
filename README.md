@@ -16,13 +16,18 @@ npm i -S start-less
 // tasks/index.js
 import start from 'start';
 import logger from 'start-simple-logger';
+import clean from 'start-clean';
+import files from 'start-files';
 import less from 'start-less';
+import write from 'start-write';
 
 export function build() {
     return start(logger)(
-        ...
-        less('src/**/*.less', 'build/')
-        ...
+        files('build/'),
+        clean(),
+        files('lib/**/*.less'),
+        less(),
+        write('build/', '.css')
     );
 }
 ```
@@ -37,8 +42,6 @@ export function build() {
 
 ## Arguments
 
-`less(patterns, outDir, options)`
+`less(options)`
 
-* `patterns` – [globby patterns](https://github.com/sindresorhus/globby)
-* `outDir` – output directory, like `build/`
 * `options` – [Less options](http://lesscss.org/usage/#using-less-in-the-browser-options)
