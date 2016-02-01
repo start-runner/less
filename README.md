@@ -2,7 +2,7 @@
 [![travis](http://img.shields.io/travis/start-runner/less.svg?style=flat-square)](https://travis-ci.org/start-runner/less)
 [![deps](https://img.shields.io/gemnasium/start-runner/less.svg?style=flat-square)](https://gemnasium.com/start-runner/less)
 
-Less build task for [Start](https://github.com/start-runner/start).
+Less task for [Start](https://github.com/start-runner/start).
 
 ## Install
 
@@ -11,6 +11,8 @@ npm i -S start-less
 ```
 
 ## Usage
+
+Task is rely on array of files and provides `[{ path, data }]` output.
 
 ```js
 // tasks/index.js
@@ -22,7 +24,7 @@ import less from 'start-less';
 import write from 'start-write';
 
 export function build() {
-    return start(logger)(
+    return start(logger())(
         files('build/'),
         clean(),
         files('lib/**/*.less'),
