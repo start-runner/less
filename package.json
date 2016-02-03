@@ -1,14 +1,11 @@
 {
   "name": "start-less",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Less task for Start",
   "keywords": [ "start", "start-task", "less" ],
   "homepage": "https://github.com/start-runner/less",
   "repository": "start-runner/less",
-  "contributors": [
-    "Kir Belevich <kir@soulshine.in> (https://github.com/deepsweet)",
-    "Denis Koltsov <iam@mistadikay.com> (https://github.com/mistadikay)"
-  ],
+  "author": "Kir Belevich <kir@soulshine.in> (https://github.com/deepsweet)",
   "files": [ "build/" ],
   "main": "build/index.js",
   "peerDependencies": {
