@@ -18,14 +18,14 @@ npm i -S start-less
 
 ```js
 import start from 'start';
-import logger from 'start-simple-logger';
+import reporter from 'start-pretty-reporter';
 import files from 'start-files';
 import clean from 'start-clean';
 import less from 'start-less';
 import write from 'start-write';
 
 export function build() {
-    return start(logger())(
+    return start(reporter())(
         files('build/'),
         clean(),
         files('lib/**/*.less'),
