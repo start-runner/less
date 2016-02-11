@@ -22,6 +22,7 @@ import reporter from 'start-pretty-reporter';
 import files from 'start-files';
 import clean from 'start-clean';
 import less from 'start-less';
+import rename from 'start-rename';
 import write from 'start-write';
 
 export function build() {
@@ -30,7 +31,8 @@ export function build() {
         clean(),
         files('lib/**/*.less'),
         less(),
-        write('build/', '.css')
+        rename(file => file.replace(/\.less$/, '.css')),
+        write('build/')
     );
 }
 ```
