@@ -21,6 +21,7 @@ import start from 'start';
 import reporter from 'start-pretty-reporter';
 import files from 'start-files';
 import clean from 'start-clean';
+import read from 'start-read';
 import less from 'start-less';
 import rename from 'start-rename';
 import write from 'start-write';
@@ -30,14 +31,15 @@ export function build() {
         files('build/'),
         clean(),
         files('lib/**/*.less'),
-        less(),
+        read(),
+        less({ sourceMap: true }),
         rename(file => file.replace(/\.less$/, '.css')),
         write('build/')
     );
 }
 ```
 
-Task is rely on array of files and provides `[{ path, data }]` output, see [documentation](https://github.com/start-runner/start#readme) for details.
+Task is rely on `[{ path, data, map }]` input and provide the same, see [documentation](https://github.com/start-runner/start#readme) for details.
 
 ## Arguments
 

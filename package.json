@@ -9,7 +9,6 @@
   "files": [ "build/" ],
   "main": "build/index.js",
   "dependencies": {
-    "pify": "2.x.x",
     "less": "2.x.x",
     "babel-runtime": "6.x.x"
   },
