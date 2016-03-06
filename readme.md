@@ -5,7 +5,7 @@
 [![windows build](https://img.shields.io/appveyor/ci/start-runner/less.svg?label=windows&style=flat-square)](https://ci.appveyor.com/project/start-runner/less)
 [![coverage](https://img.shields.io/codecov/c/github/start-runner/less.svg?style=flat-square)](https://codecov.io/github/start-runner/less)
 [![deps](https://img.shields.io/gemnasium/start-runner/less.svg?style=flat-square)](https://gemnasium.com/start-runner/less)
-[![gitter](https://img.shields.io/badge/gitter-join_chat_%E2%86%92-00d06f.svg?style=flat-square)](https://gitter.im/start-runner/start)
+[![gitter](https://img.shields.io/badge/gitter-join_chat_%E2%86%92-46bc99.svg?style=flat-square)](https://gitter.im/start-runner/start)
 
 [Less](http://lesscss.org/) task for [Start](https://github.com/start-runner/start).
 
