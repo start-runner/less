@@ -46,4 +46,4 @@ This task relies on `[{ path, data, map }]` input and provides the same, see [do
 
 `less(options)`
 
-* `options` – [Less options](http://lesscss.org/usage/#using-less-in-the-browser-options)
+* `options` – [Less options](http://lesscss.org/usage/#using-less-in-the-browser-options), `{ relativeUrls: true, compress: false }` by default
